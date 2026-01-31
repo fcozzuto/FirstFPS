@@ -142,7 +142,7 @@ public class PlayerController : MonoBehaviour
 
         move.y = ySpeed;
 
-        currentSpeed = Input.GetKey(KeyCode.LeftControl) ? sprintSpeed : normalSpeed;
+        currentSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : normalSpeed;
         characterController.Move(move * currentSpeed * Time.deltaTime);
     }
 
